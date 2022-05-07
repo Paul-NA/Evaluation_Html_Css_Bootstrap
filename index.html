@@ -52,7 +52,7 @@
                         <li class="nav-item"><a class="nav-link" href="rendez-vous.html">Nos rendez-vous</a></li>
                     </ul>
                     <ul class="navbar-nav mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="btn btn-primary" href="#">Faire un don</a></li>
+                            <button class="btn btn-primary align-content-end fw-bold" data-bs-toggle="modal" data-bs-target="#donModal"><i class="bi bi-paypal"></i></i> Faire un don</button>
                     </ul>
                 </div>
             </div>
@@ -161,7 +161,35 @@
             </div>
       </div>
     </footer>
-
+    
+    
+    <!-- Modal -->
+    <!-- Modal Don -->
+    <div class="modal fade" id="donModal" tabindex="-1" aria-labelledby="donModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header" >
+                    <h5 class="modal-title" id="donModalLabel">Faire un don :</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h4>Pourquoi faire un don ?</h4>
+                    <p>
+                        Nous travaillons dur pour vous offrir un maximum de ressources, aujourd'hui notre association est en difficulté pour
+                        organisé de nouvelle conférence, les prix monte pour loué des salles et les frais anexes coûte cher.<br /><br />
+                        
+                        Un simple don permet de démultiplier l'efficacité des actions de l'associations. Cela permet de réaliser de nombreuses 
+                        choses telles que financer divers projets ou payer des salariés.<br /> 
+                        En faisant un don, vous aidez au développement de l'associations, et vous nous apportez donc un soutien indispensable!
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger"><i class="bi bi-paypal"></i> Je fait un bon avec paypal</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <!-- Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="Templates/Assoc/Js/script.js"></script>
