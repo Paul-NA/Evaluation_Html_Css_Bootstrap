@@ -13,7 +13,7 @@ function isOnTop() {
     document.documentElement.scrollTop = 0;
 }
 
-    if(document.getElementById('videoPlayerModal')){
+ if(document.getElementById('videoPlayerModal')){
     var videoPlayerModal = document.getElementById('videoPlayerModal');
     videoPlayerModal.addEventListener('show.bs.modal', function (event) {
         // Button that triggered the modal
